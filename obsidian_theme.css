@@ -1,0 +1,1028 @@
+/*based largely on the Official Dracula theme, as well as https://github.com/obsidian-community/obsidian-theme-template/blob/main/obsidian.css and the built-in app.css*/
+
+/*Fonts*/
+:root {
+    /*
+    If the font isn't installed in the system, 
+    it will go down the list until it finds on that is.
+    */
+
+    --default-font: "Helvetica Neue", sans-serif; /*Note and Settings Text*/
+    --font-monospace: "Operator Mono", monospace; /*Code block text*/
+
+    /*
+    var(--variableName); is a variable,
+    so you can use what you set over and over without having
+    to rewrite it multiple times.
+    */
+
+    --mint: #C2FFDF;
+    --medium-purple: #433E56;
+    --dark-purple: rgb(54,50,69);
+    --highlight: #8077A8;
+    --violet: #C5A3FF;
+
+    --lea: #11EAEA;
+    --hotpink:#FF47FF;
+    --hotpinkRGB: 255,70,255;
+    --yellow: #FFF352;
+
+    --comment_grey: #86A8B0;
+    --line_number_grey: #9E9E9EFF;
+}
+
+
+
+.theme-dark {
+  --background-primary: var(--medium-purple);
+  --background-secondary: var(--medium-purple);
+  /*--background-secondary-alt: #8077A8;*/
+  --background-primary-alt: var(--dark-purple);
+  --background-secondary-alt: var(--dark-purple);
+
+
+  --text-normal: #F8F8F0;
+  --text-title-h1: var(--mint);
+  --text-title-h2: var(--mint);
+  --text-title-h3: var(--mint);
+  --text-title-h4: var(--mint);
+  --text-title-h5: var(--mint);
+  --text-title-h6: var(--mint);
+  --text-link: var(--lea);
+
+  --background-modifier-border: var(--violet);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.0);
+  --background-modifier-form-field-highlighted: rgba(255, 255, 255, 0.0);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: var(--yellow);
+  --background-modifier-success-rgb: 255, 243, 82;
+  --background-modifier-error: var(--hotpink);
+  --background-modifier-error-rgb: var(--hotpinkRGB);
+  --background-modifier-error-hover: #FF47FF66;
+  --background-modifier-cover: #433E5699;
+
+  --markup-code: var(--yellow);
+
+  --text-tag: var(--mint);
+  --text-a: var(--lea);
+  --text-a-hover: var(--lea);
+  --text-mark: var(--yellow);
+
+  --text-accent: var(--mint);
+  --text-accent-hover: var(--mint);
+
+  --text-muted: rgba(248,248,240,0.8);
+  --text-muted-rgb: 134, 168, 176;
+  --text-faint: var(--violet);
+  --text-error:var(--hotpink);
+  --text-error-hover: var(--hotpink);
+  --text-highlight-bg: rgba(197, 163, 255, 0.4);
+  --text-highlight-bg-active: rgba(197, 163, 255, 0.4);
+  --text-selection: var(--highlight);
+  /*--text-selection: rgba(197, 163, 255, 0.4);*/
+  --text-on-accent: #dcddde;
+
+  --interactive-normal: var(--dark-purple);
+  --interactive-hover: var(--medium-purple);
+
+  --interactive-accent: var(--mint);
+  --interactive-accent-rgb: 197, 163, 255;
+
+  --interactive-accent-hover: var(--mint);
+  --interactive-success: var(--mint);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+
+  --blockquote-border: #C5A3FF;
+}
+
+.titlebar, .status-bar {
+    background-color: var(--background-primary-alt);
+    border: none  !important;
+}
+
+.workspace-tab-header-container{
+    height: 34px;
+}
+
+.prompt {
+    border: 1px var(--highlight) solid;
+}
+
+.workspace-ribbon-collapse-btn{
+    color:var(--text-normal);
+}
+
+.cm-editor, .markdown-source-view, .cm-content {
+  font-family: var(--font-monospace) !important;
+}
+
+.cm-lineNumbers {
+    font-family: var(--font-monospace);
+    font-weight: medium;
+    color:var(--line_number_grey);
+    font-size: 1.4em;
+}
+
+.cm-gutter {
+    border-right: 1px var(--comment_grey) dotted;
+    padding-right:0.5em;
+    padding-top: 15px;
+    background: var(--background-primary);
+}
+.cm-gutters {
+    background: var(--background-primary);
+    padding-right: 0px !important;   
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+    padding: 0px  20px;   
+}
+
+.cm-contentContainer {
+    background: var(--background-primary);
+    padding-right: 2em  !important;
+    padding-left: 1.5em  !important;
+    padding-top: 15px;
+}
+
+.view-header {
+    height: unset;
+    border-radius: 15px 15px 0 0;
+    background: var(--background-primary);
+    border-bottom: var(--border-width) solid var(--highlight);
+}
+
+.view-header-title {
+    font-size: 14px;
+    font-weight: normal;
+    /*width: fit-content;*/
+    padding: 0px 18px;
+}
+.view-header-title-container:after {
+    content: none;
+}
+
+.tooltip {
+    /*color: ;*/
+    background: var(--background-primary);
+    border: 1px var(--violet) solid;
+}
+
+.tooltip .tooltip-arrow {
+  border-bottom: 5px solid var(--violet);
+}
+.tooltip.mod-right .tooltip-arrow {
+  border-right: 5px solid var(--violet);
+}
+.tooltip.mod-left .tooltip-arrow {
+  border-left: 5px solid var(--violet);
+}
+.tooltip.mod-top .tooltip-arrow {
+  border-top: 5px solid var(--violet);
+}
+
+.selected {
+    color: var(--interactive-accent-hover);
+}
+
+.selected .menu-item-icon {
+  color: var(--interactive-accent-hover);
+}
+
+.nav-file-title.is-active, .nav-folder-title.is-active, .nav-folder-title:hover {
+    background-color: unset;
+    color: var(--interactive-accent-hover);
+}
+
+.is-selected {
+    /*background: unset;*/
+    background: var(--medium-purple);
+    outline: 1px var(--mint) solid;
+    color: var(--mint);
+}
+.community-theme.is-selected {
+    /*background: unset !important;*/
+    border: 1px var(--highlight) solid;
+}
+
+.is-selected .zoteroResult .zoteroTitle {
+  color: var(--mint);
+  border-color: var(--mint);
+}
+
+.suggestion-item.is-selected {
+  background: var(--medium-purple);
+  outline: 1px var(--mint) solid;
+  color: var(--mint);
+}
+
+.suggestion-aux,.kbd {
+    background: rgba(0,0,0,0);
+}
+
+.suggestion-highlight {
+  color: var(--interactive-accent)!important;
+}
+
+
+.dropdown {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23f8f8f0%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+
+input.document-search-input.mod-no-match, input.document-replace-input.mod-no-match {
+  background-color: unset; 
+  color: var(--hotpink);
+  caret-color: var(--text-normal);
+}
+input.document-search-input.mod-no-match:hover, input.document-replace-input.mod-no-match:hover {
+  background-color: unset; 
+  /*color: var(--hotpink);*/
+}
+
+/*.markdown-source-view.mod-cm6 .cm-scroller {
+     padding: 0px; 
+     padding-top: 1em;
+     padding-bottom: 1em;
+}
+
+.cm-scroller {
+    background: var(--background-primary-alt);
+}
+
+
+.cm-s-obsidian {
+    /*padding-left: 0px !important;*/
+/*}*/
+
+
+input[type='range'] {
+    background-color: var(--highlight);
+}
+
+/* LINKS & BRACKETS */
+
+/* link */
+
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link,
+.cm-formatting-link {
+  color: var(--text-a) !important;
+  text-decoration: none !important;
+  /*font-family: Avenir, Avenir Next, sans-serif !important;*/
+}
+
+/* url's */
+
+/* editor */
+
+.cm-url {
+  color: var(--text-link) !important;
+}
+
+/* preview */
+
+.external-link {
+  color: var(--text-link) !important;
+}
+
+
+/* make external links italics to differentiate */
+
+a:not(.internal-link) {
+  font-style: italic;
+}
+
+/* horizontal line in preview */
+
+.markdown-preview-view hr {
+  background-color: var(--text-normal);
+}
+
+.markdown-embed {
+  padding-left: 8px !important;
+  padding-right: 4px !important;
+  margin-left: 8px !important;
+  margin-right: 4px !important;
+}
+
+/* internal embedded link rendering in preview */
+
+.markdown-embed-title {
+  color: var(--text-link);
+}
+
+.markdown-embed {
+  padding-left: 8px !important;
+  padding-right: 4px !important;
+  margin-left: 8px !important;
+  margin-right: 4px !important;
+}
+
+/* NAKED EMBEDS*/
+
+/* But keeping Border and Scroll! */
+
+.markdown-embed-title {
+  display: none;
+}
+
+.markdown-preview-view .markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+
+.markdown-preview-view .markdown-embed-content > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-embed {
+  background-color: var(--background-primary-alt) !important;
+}
+
+.markdown-embed-link {
+  color: var(--text-a) !important;
+  right: 2px !important;
+}
+
+.markdown-embed-link:hover {
+  color: var(--text-link) !important;
+}
+
+/* NO FILE OPEN PAGE*/
+
+.empty-state-title {
+  color: var(--text-title-h1) !important;
+}
+
+.empty-state-action {
+  color: var(--text-muted) !important;
+}
+
+.empty-state-action:hover {
+  color: var(--text-normal) !important;
+}
+
+/* GRAPH VIEW */
+
+#graph-view-canvas .links {
+  stroke: var(--mint) !important;
+}
+
+.graph-view.color-fill {
+  color: var(--text-muted);
+}
+.graph-view.color-fill-focused {
+  color: var(--mint);
+}
+.theme-dark .graph-view.color-fill-tag {
+  color: var(--violet);
+}
+.theme-dark .graph-view.color-fill-attachment {
+  color: var(--lea);
+}
+
+
+/*.markdown-preview-view .language-yaml {
+  display: none;
+}*/
+
+
+
+pre code {
+  padding: 5px !important;
+  line-height: normal;
+  display: block;
+  background-color: var(--background-primary-alt) !important;
+}
+
+.markdown-preview-view pre {
+  padding: 0px !important;
+}
+.frontmatter-container {
+  margin-bottom: 1em;
+  border-color: var(--highlight);
+}
+
+/* in-line code for editor and preview and code block for editor*/
+
+code,
+.cm-inline-code {
+  background-color: var(--background-primary-alt) !important;
+  color: var(--markup-code) !important;
+  bottom: 0px !important;
+}
+
+/* Code Appearance */
+
+/* editor */
+
+.CodeMirror-code span.cm-inline-code {
+  color: var(--markup-code) !important;
+}
+
+/* Editor CodeBlock TEXT Appearance - */
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--markup-code) !important;
+}
+
+/* preview */
+
+.markdown-preview-view code {
+  color: var(--markup-code) !important;
+  background-color: var(--background-primary-alt) !important;
+  bottom: -0.1px !important;
+}
+
+/* borders */
+
+.cm-s-obsidian span.cm-inline-code {
+  border: 1px solid #525660;
+  border-radius: 4px;
+}
+
+.cm-s-obsidian span.cm-formatting-code.cm-inline-code {
+  border-right-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.cm-s-obsidian span.cm-formatting-code.cm-inline-code + span.cm-inline-code {
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  color: unset; 
+  /*background-color: unset; */
+  /*outline: 3px var(--hotpink) double;*/
+  text-decoration: underline;
+  text-decoration-color: var(--hotpink);
+  text-decoration-style: wavy;
+}
+
+.cm-s-obsidian
+  span.cm-formatting-code.cm-inline-code
+  + span.cm-inline-code
+  + span.cm-formatting-code.cm-inline-code {
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-right-width: 1px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.nav-file-title.is-active, .nav-folder-title.is-active, body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover {
+    background-color: var(--highlight);
+    color: var(--text-normal);
+}
+
+.has-focus .nav-file-title.is-active {
+  border-left: 3px var(--mint) solid;
+}
+
+/* BLOCKQUOTES */
+
+/* editor */
+
+.cm-quote {
+  color: var(--interactive-accent) !important;
+  font-style: italic;
+}
+
+/* preview */
+
+blockquote {
+  /*color: var(--interactive-accent) !important;*/
+  font-style: italic;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: 5px var(--blockquote-border) solid;
+  /*border-color: var(--blockquote-border) !important;*/
+}
+
+/* Add quotation character before quote */
+
+/*blockquote:before {
+  font: 14px/20px italic Times, serif;
+  content: "“";
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}*/
+
+blockquote p {
+  display: inline;
+}
+
+/* IMAGES */
+
+/* embedded images */
+
+img {
+  display: block;
+  margin-left: 20pt;
+  margin-right: auto;
+}
+
+/* TABLES */
+
+th {
+  border: 1px solid var(--background-primary-alt) !important;
+}
+
+td {
+  border: 1px solid var(--background-primary-alt) !important
+}
+
+thead {
+  border-bottom: 4px solid var(--background-primary-alt);
+}
+
+.table {
+  background-color: var(--background-secondary-alt);
+  border: 1px solid var(--background-primary-alt);
+  padding: 4px;
+  line-height: normal;
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* SIDEBAR & DOCK ETC. */
+
+/* view action buttons */
+
+.view-action {
+  color: var(--text-muted) !important;
+  text-decoration: none !important;
+}
+
+.view-action:hover,
+.view-action.is-active {
+  color: var(--text-normal) !important;
+}
+
+
+/*.status-bar {
+  background-color: var(--background-secondary-alt);
+}*/
+
+/*.side-dock-ribbon-action {
+  color: #FFB8D1 !important;
+  color: var(--interactive-normal) !important;
+}*/
+
+.side-dock-ribbon-action:hover {
+  color: var(--text-normal) !important;
+}
+
+.workspace-tab-header {
+  color: var(--text-muted) !important;
+  text-decoration: none !important;
+}
+
+.workspace-tab-header:hover {
+  color: var(--text-normal) !important;
+}
+
+button.mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--interactive-normal);
+}
+
+button.mod-warning {
+    border: var(--background-modifier-error);
+    background-color: var(--background-secondary-alt);
+}
+
+.cm-s-obsidian .HyperMD-codeblock-begin,
+.cm-s-obsidian .HyperMD-codeblock-end {
+  color: var(--text-normal);
+}
+
+/* searchbar */
+
+.side-dock-panels-container {
+  background-color: var(--background-secondary-alt) !important;
+  color: var(background-secondary-alt);
+}
+
+/* icons at top of panes*/
+
+.file-view-actions a {
+  color: var(--text-muted) !important;
+}
+
+.file-view-actions a:hover {
+  color: var(--text-muted) !important;
+}
+
+/* html tags in editor */
+
+.cm-tag {
+  color: var(--text-tag) !important;
+}
+
+/* .side-dock-ribbon-tab,
+.side-dock-ribbon-action {} */
+
+.side-dock-ribbon-tab.is-active {
+  color: var(--interactive-accent) !important;
+}
+
+.side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
+  color: var(--text-muted) !important;
+  background-color: var(--background-secondary);
+}
+
+.nav-file-title {
+  color: var(--text-muted) !important;
+  background-color: var(--background-secondary);
+}
+
+.nav-folder-title {
+  color: var(--text-muted) !important;
+  background-color: var(--background-secondary);
+}
+
+.nav-file-title:hover {
+  color: var(--text-normal) !important;
+}
+
+.nav-folder-title:hover {
+  color: var(--text-normal) !important;
+}
+
+.nav-action-button.is-active {
+  background-color: var(--background-secondary-alt);
+}
+
+.search-result-file-title {
+  color: var(--text-a) !important;
+  background-color: var(--background-secondary);
+}
+
+.search-result-file-matched-text {
+  color: var(--text-link) !important;
+  background-color: var(--background-secondary);
+}
+
+/* .nav-file-tag {
+  color: #59a2c5;
+  } /* for the PNG text, but can't specifically target "PNG", just all of those filetype tags. */
+
+.nav-file.is-active .nav-file-tag {
+  color: var(--text-normal);
+}
+
+/* hover actions on side dock navigation */
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-tab-inner:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover {
+  color: var(--text-normal);
+}
+
+/* Hover color over tree item flairs */
+.tree-item-self:hover .tree-item-flair {
+  background-color: var(--background-secondary);
+}
+
+/* clean up side bar empty state (e.g. unlinked mentions) */
+
+.search-empty-state {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: normal;
+}
+
+/* clean up side bar empty state (e.g. unlinked mentions) */
+
+.search-empty-state {
+  width: auto;
+  padding-left: 10px;
+  padding-right: 5px;
+  line-height: normal;
+}
+
+/* NORMAL TEXT OUTSIDE OF HEADINGS AND CODE */
+
+/* preview */
+
+.markdown-preview-view {
+  color: var(--text-normal);
+/*  padding-left: 8% !important;
+  padding-right: 4% !important;*/
+}
+
+.mod-single-child .markdown-preview-view {
+  color: var(--text-normal);
+/*  padding-left: 10% !important;
+  padding-right: 10% !important;*/
+}
+
+/* editor */
+
+.cm-s-obsidian {
+  color: var(--text-normal);
+/*  padding-left: 8% !important;
+  padding-right: 4% !important;*/
+}
+
+.mod-single-child .cm-s-obsidian {
+  color: var(--text-normal);
+/*  padding-left: 8% !important;
+  padding-right: 4% !important;*/
+}
+
+table * {
+  border-color: var(--highlight) !important;
+}
+
+/* HEADINGS */
+
+/* preview */
+
+.markdown-preview-view h1 {
+  color: var(--text-normal);
+}
+
+.markdown-preview-view h2 {
+  color: var(--text-normal);
+}
+
+.markdown-preview-view h3 {
+  color: var(--text-normal);
+}
+
+.markdown-preview-view h4 {
+  color: var(--text-normal);
+}
+
+.markdown-preview-view h5 {
+  color: var(--text-normal);
+}
+
+.markdown-preview-view h6 {
+  color: var(--text-normal);
+}
+
+/* editor */
+
+.cm-header-1 {
+  color: var(--text-title-h1);
+}
+
+.cm-header-2 {
+  color: var(--text-title-h2);
+}
+
+.cm-header-3 {
+  color: var(--text-title-h3);
+}
+
+.cm-header-4 {
+  color: var(--text-title-h4);
+}
+
+.cm-header-5 {
+  color: var(--text-title-h5);
+}
+
+.cm-header-6 {
+  color: var(--text-title-h6);
+}
+
+/* TAGS */
+
+/* preview */
+
+a.tag {
+  color: var(--text-tag) !important;
+}
+
+/* editor */
+
+.cm-hashtag {
+  color: var(--text-tag) !important;
+}
+
+/* BOLD */
+
+/* preview */
+
+strong {
+  color: var(--text-normal);
+  font-weight: bold;
+}
+
+/* editor */
+
+.cm-strong {
+  color: var(--markup-code);
+}
+
+/* ITALICS */
+
+/* preview */
+
+em {
+  color: var(--text-normal);
+  font-style: italic;
+}
+
+/* editor */
+
+.cm-em {
+  color: var(--interactive-accent);
+}
+
+/* HIGHLIGHT */
+
+/* preview */
+
+mark {
+  color: var(--background-primary) !important;
+  background-color: var(--text-mark) !important;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* editor */
+
+.cm-highlight {
+  color: var(--background-primary) !important;
+  background-color: var(--text-mark) !important;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* COLLAPSED RIBBONS */
+
+.workspace-ribbon.is-collapsed {
+  background-color: var(--background-secondary-alt) !important;
+  border-color: var(--background-secondary-alt) !important;
+}
+
+.workspace-ribbon.mod-right.is-collapsed {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+.workspace-ribbon.mod-left.is-collapsed {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+/* POPUP NOTIFICATION*/
+
+.notice {
+  color: var(--background-primary-alt) !important;
+  background-color: var(--highlight) !important;
+}
+
+/* UL, OL, BULLETS, CHECKBOXES & FOLDING ARROWS */
+
+/* task lists */
+
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  top: 1.3px !important;
+  right: 5px !important;
+  box-sizing: border-box;
+  border: 1px solid var(--accent-2);
+  position: relative;
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0;
+  box-shadow: 0 0 0.1em var(--interactive-accent);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: "✓";
+  position: absolute;
+  color: var(--interactive-accent);
+  line-height: 1.25em;
+  width: 1.2em;
+  text-align: center;
+  text-shadow: 0 0 0.5em var(--accent-2);
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+  top: 0px;
+}
+
+.checkbox-container {
+  background-color: var(--background-primary-alt);
+  border: 1px var(--highlight) solid;
+  border-radius: 14px;
+  display: inline-block;
+  height: 22px;
+  position: relative;
+  top: 4px;
+  user-select: none;
+  width: 42px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+  transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border 0.15s ease-in-out, opacity 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.checkbox-container.is-enabled {
+  background-color: var(--highlight);
+}
+
+
+.markdown-preview-view mark {
+  color: var(--text-link);
+  background-color: var(--background-primary-alt);
+}
+
+.cm-formatting
+/* This is the color of header hashtags. Don't change. */
+
+.cm-formatting-list-ul .cm-list-1
+/* This is the color of text in lists. Don't change. */
+
+
+/* Subtler code folding arrows */
+
+.CodeMirror-foldgutter-folded:after,
+.CodeMirror-foldgutter-open:after {
+  opacity: 0.5;
+  color: var(--text-link);
+}
+
+.CodeMirror-foldgutter-folded:hover:after,
+.CodeMirror-foldgutter-open:hover:after {
+  opacity: 1;
+  color: var(--text-link);
+}
+
+.CodeMirror-foldgutter-folded:after {
+  content: "\25BA";
+  color: var(--text-link);
+}
+
+.CodeMirror-foldgutter-open:after {
+  content: "\25BC";
+}
+
+/* Bullet Point Relationship Lines */
+
+.cm-hmd-list-indent .cm-tab,
+ul ul {
+  position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before {
+  content: "";
+  border-left: 1px solid;
+  color: var(--comment_grey);
+  position: absolute;
+}
+
+.cm-hmd-list-indent .cm-tab::before {
+  left: 0;
+  top: -5px;
+  bottom: -4px;
+}
+
+ul ul::before {
+  left: 0px;
+  top: 0;
+  bottom: 0;
+}
+
+/* ul, li & ol colors in editor */
+
+.cm-s-obsidian span.cm-formatting-list {
+  color: var(--interactive-accent);
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+
+/*.is-selected {
+  background-color: var(--blockquote-border)!important;
+}*/
