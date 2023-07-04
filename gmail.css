@@ -1,0 +1,226 @@
+body.aAU {}body.aAU {}.x0 { 
+	color: rgb(128, 119, 168);
+ }
+.x0:hover { 
+	background-color: rgba(17, 234, 234, 0.2);
+	color: rgb(67, 62, 86);
+ }
+.yO { 
+	color: rgb(32, 33, 36);
+ }
+.x7 { 
+	color: rgb(32, 33, 36);
+	background: rgb(194, 255, 223);
+ }
+.WR .z0 > .L3 { 
+	border-radius: 5px;
+	height: 56px;
+	padding: 0px 24px 0px 0px;
+	min-width: 96px;
+ }
+.bsU, .bsU:focus, .bsU:active, .TK .nZ>.aHS-bnt .bsU, .TK .nZ .bsU { 
+	color: rgb(67, 62, 86);
+	background: rgb(255, 243, 82);
+	border-radius: 10px;
+	text-align: center;
+	font-weight: bold;
+	width: 20px;
+	padding: 0px;
+	text-shadow: none;
+ }
+.TK .TO, .n6 .ah9, .CL { 
+	border-radius: 0px 16px 16px 0px;
+ }
+.z0 > .L3, .bym .aBO .L3 { 
+	background-color: rgb(194, 255, 223);
+	background-image: none;
+	color: rgb(95, 99, 104);
+	border-radius: 16px;
+	box-shadow: none;
+}
+.z0 > .L3:hover, .z0 > .T-I-KE.L3:focus, .bym .aBO .L3:hover { 
+	background-color: rgb(194, 255, 223);
+	color: rgb(95, 99, 104);
+	box-shadow: none;
+	background-image: none;
+}
+
+.aIH .L3::before, .aIH.bym .L3::before {
+    background-image: url(https://www.gstatic.com/images/icons/material/system_gm/2x/create_gm_grey_24dp.png);
+}
+
+.arL .L3::before, .arL.bym .L3::before {
+    background-image: url(https://www.gstatic.com/images/icons/material/system_gm/2x/chat_bubble_outline_gm_grey_24dp.png);
+}
+.arM .L3::before, .arM.bym .L3::before {
+    background-image: url(https://www.gstatic.com/images/icons/material/system_gm/2x/add_gm_grey_24dp.png);
+}
+
+.bhZ.bym, .bhZ.bjB {
+	background-color: rgb(67, 62, 108);
+	box-shadow: rgba(0, 0, 0, 0.14) 0px 11px 10px 0px, rgba(0, 0, 0, 0.12) 0px 18px 18px 0px, rgba(0, 0, 0, 0.2) 0px 5px 5px -1px;
+	}
+.bhZ:not(.bym) .z0 > .L3 { 
+	border-radius: 32px;
+	font-size: 0px;
+	height: 56px;
+	padding: 0px;
+	width: 56px;
+ }
+.bhZ:not(.bym):not(.bjB) .bsU { 
+	background-color: rgb(255, 243, 82);
+	width: 8px;
+	border-radius: 10px;
+ }
+.T-I-atl {
+	box-shadow: none;
+	background-color: rgb(17, 234, 234);
+	background-image: none;
+	border: 1px solid rgb(17, 234, 234);
+	color: rgb(255, 255, 255);
+	}
+.T-I-atl.T-I-JW { 
+	box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+ }
+.T-I-atl:active { 
+	box-shadow: rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px, rgba(0, 0, 0, 0.2) 0px 5px 5px -3px;
+	background: rgb(17, 234, 234);
+ }
+
+.ZF-Av .boo .nr:focus { 
+	height: 20px;
+	box-shadow: rgb(17, 234, 234) 0px -1px 0px 0px inset;
+ }
+.TC > .x8 { 
+	color: rgb(128, 119, 168);
+ }
+.TC > .x8::before, .ya .x2::before, .ya .x8::before, .ahf::before { 
+	background: rgba(17, 234, 234, 0.2);
+ }
+.dC:hover {
+	outline: rgb(17, 234, 234) solid 1px;
+	box-shadow: none;
+	background-color: rgb(17, 234, 234);
+	}
+.hG.T-I-atl, .hG.T-I-atl.T-I-JW, .hG.T-I-atl:focus {
+	border-left: 1px solid white;
+	}
+.gU .btA .dC {border-radius: 5px;}
+.gU .btA .v7.T-I, .gU .btA .v7.T-I::before { 
+	border-radius: 5px 0px 0px 5px;
+ }
+.gU .v7.T-I:not(.btz) { 
+	background-color: rgb(17, 234, 234);
+ }
+.gU .v7.T-I-atl:not(.btz):hover { 
+	background-color: rgb(17, 234, 234);
+}
+.gU .btA .hG, .gU .btA .hG::before { 
+	border-radius: 0px 5px 5px 0px;
+ }
+.gU .hG:not(.v6) { 
+	background-color: rgb(17, 234, 234);
+ }
+.gU .hG.T-I-JW:not(.v6) { 
+	background-color: rgb(17, 234, 234);
+ }
+.gU .hG:not(.v6):focus {
+	background-color: rgb(17, 234, 234);
+	box-shadow: none;
+	}
+.gU .hG:not(.v6):active { 
+	background-color: rgb(17, 234, 234);
+ }
+.aT5-aOt-I-JX-atM { 
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+ }
+.brC-aMv-auO .aT5-aOt-I-JX { 
+	fill: rgb(17, 234, 234);
+ }
+.brC-aMv-auO .brC-dA-I.aT5-aOt-I-Jp .aT5-aOt-I-JX-atM { 
+	background-color: rgb(67, 62, 86);
+ }
+.brC-aMv-auO .brC-dA-I.aT5-aOt-I-Jp.aT5-aOt-I-JO .aT5-aOt-I-JX-Jw, .brC-aMv-auO .brC-dA-I.aT5-aOt-I-Jp.aT5-aOt-I-JW .aT5-aOt-I-JX-Jw { 
+	background-color: rgb(67, 62, 86);
+ }
+body {
+	color: rgb(67, 62, 108);
+	}
+.T-I-atl {
+	background: none rgb(17, 234, 234); 
+	color: rgb(68, 71, 70);
+	}
+.T-I-atl.T-I-JW, .T-I-atl:hover {
+	background-color: rgb(17, 234, 234);
+	/* border: none; */
+	box-shadow: none;
+	}
+.T-I-atl:focus { 
+	box-shadow: rgba(26, 115, 232, 0.3) 0px 1px 2px 0px, rgba(26, 115, 232, 0.15) 0px 1px 3px 1px;
+	outline: transparent solid 1px;
+	border: none;
+ }
+.T-I-atl:active { 
+	background-color: rgb(17, 234, 234);
+	border: none;
+ }
+.bkK > .nH { 
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+ }
+.wp, .wq, .wo, .wn { /*background gradient / vignette*/
+	background: none;
+}
+.gb_7c {
+	padding-right: 0px;
+	min-width: unset !important;
+	}
+.gb_oa { 
+	background-color: rgba(255, 255, 255, 0.88);
+	border: 1px solid rgb(218, 220, 224);
+	border-radius: 5px;
+ }
+.gb_oa.gb_aa { 
+	background-color: white;
+	border: 1px solid rgb(95, 99, 104);
+ }
+.gb_oa.gb_aa, .gb_oa.gb_aa:hover { 
+	background-color: white;
+ }
+
+.gb_Pd:not(.gb_Je) .gb_Ke {
+	padding-left: 7px;
+	}
+
+.a4t {
+    background-image: none !important;
+    background-color: rgb(67, 62, 108);
+}
+
+.V3.aam {
+}
+
+.gb_xc { /*google logo*/
+    display: none !important;
+}
+
+.T-ays *, .brC-ays {  /*tooltips*/
+    background-color: rgb(67, 62, 108);
+}
+
+
+.apV.aJu, .apV.aBA.bym {
+    background-color: rgb(67, 62, 108);
+}
+
+.bym .aBO .L3:hover::before {background-image: https://www.gstatic.com/images/icons/material/system_gm/2x/create_white_24dp.png;;
+}
+
+.aTV {
+    border-color: transparent transparent rgb(17, 234, 234) rgb(17, 234, 234);
+}
+
+form.gb_Xe.gb_vf.aJf {
+    margin-left: 10px !important;
+}
