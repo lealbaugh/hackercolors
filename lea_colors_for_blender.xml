@@ -434,6 +434,7 @@
             >
             <gradients>
               <ThemeGradientColors
+                background_type="LINEAR"
                 show_grad="TRUE"
                 high_gradient="#8077a8"
                 gradient="#433e56"
@@ -1274,6 +1275,51 @@
         </space>
       </ThemeStatusBar>
     </statusbar>
+    <spreadsheet>
+      <ThemeSpreadsheet
+        row_alternate="#c5a3ff07"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#433e56"
+            title="#ffffff"
+            text="#e8b3cc"
+            text_hi="#ffffff"
+            header="#433e56ff"
+            header_text="#ffffff"
+            header_text_hi="#ffffff"
+            button="#433e56ff"
+            button_title="#ffffff"
+            button_text="#ffffff"
+            button_text_hi="#ffffff"
+            navigation_bar="#433e5600"
+            execution_buts="#433e5600"
+            tab_active="#8077a8"
+            tab_inactive="#433e56"
+            tab_back="#433e56ff"
+            tab_outline="#8077a8"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#8077a8cc"
+                back="#8077a8b3"
+                sub_back="#8077a83e"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+        <space_list>
+          <ThemeSpaceListGeneric
+            list="#433e56"
+            list_title="#ffffff"
+            list_text="#ffffff"
+            list_text_hi="#ffffff"
+            >
+          </ThemeSpaceListGeneric>
+        </space_list>
+      </ThemeSpreadsheet>
+    </spreadsheet>
     <bone_color_sets>
       <ThemeBoneColorSet
         normal="#9a0000"
