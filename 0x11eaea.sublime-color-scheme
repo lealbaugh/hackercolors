@@ -537,6 +537,30 @@
             "scope": "meta.section.latex, support.function.section.latex",
             "foreground": "var(palepink)",
             "font_style": "italic"
+        },
+        {
+        	"scope": "source.diff markup.deleted.diff",
+        	"foreground": "var(palepink)"
+        },
+        {
+        	"scope": "source.diff markup.inserted.diff",
+        	"foreground": "var(seafoam)"
+        },
+        {
+        	"scope": "source.knitout entity.name.needle",
+        	"foreground": "var(lea)"
+        },
+        {
+        	"scope": "source.knitout entity.name.direction",
+        	"foreground": "var(yellow)"
+        },
+        {
+        	"scope": "source.knitout entity.name.carrier",
+        	"foreground": "var(violet)"
+        },
+        {
+        	"scope": "source.knitout entity.name.op",
+        	"foreground": "var(seafoam)"
         }
 	]
 }
